@@ -1,0 +1,6 @@
+.error_text {
+    background: linear-gradient(136deg, #B1FFFF 0%, #4EC3FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
