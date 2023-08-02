@@ -20,13 +20,15 @@ function App() {
       <div className="flex flex-col">
 
         <Navbar logo={logo} />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/promotion" element={<Promotion />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/recruitment" element={<Recruitment />} />
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+        <div className='min-50vw'>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/promotion" element={<Promotion />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/recruitment" element={<Recruitment />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </div>
         <Footer logo={logo} />
       </div>
     </div>

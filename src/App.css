@@ -1,6 +1,406 @@
+.min-50vw {
+    min-height: 50vw;
+}
+
 .error_text {
     background: linear-gradient(136deg, #B1FFFF 0%, #4EC3FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 0.9;
+}
+
+.error_msg {
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 128.182%;
+}
+
+.error_content {
+    line-height: 1.5;
+    width: 28vw;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.go_home_btn {
+    border-radius: 10px;
+    background: #1B2534;
+    padding: 0.8vw 1.5vw;
+    font-size: 1vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* .recruitment {
+    background: linear-gradient(136deg, #85D5FF 0%, #B8FFF1 100%);
+    min-height: 80vw;
+} */
+
+.recruitment {
+    background-image: url(/src/assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vw;
+    padding-top: 6em;
+}
+
+.recruitment-body {
+    padding: 4vw 7vw;
+}
+
+.recruitment-title {
+    font-size: 4vw;
+    font-weight: 800;
+    margin-bottom: 8vw;
+}
+
+.recruitment-content {
+    background-color: white;
+    padding: 1.8vw 3.5vw;
+    border-radius: 1.5vw;
+    margin-bottom: 4vw;
+    min-height: 24vw;
+}
+
+.recruitment-contact {
+    background-color: white;
+    padding: 3.5vw;
+    border-radius: 1.5vw;
+    margin-bottom: 4vw;
+}
+
+.recruitment-description {
+    margin-top: 2vw;
+    font-size: 2vw;
+}
+
+.description_rec {
+    color: #606060;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.input_label {
+    color: #606060;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.input_field {
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    margin-top: 2vw;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 2.5vw;
+}
+
+.textarea_field {
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    margin-top: 2vw;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 2.5vw;
+}
+
+.agree_checkbox {
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 5px;
+    background: #D9D9D9;
+}
+
+.agreement {
+    color: #000;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.agreement_term {
+    color: #1C6DC1;
+    cursor: pointer;
+}
+
+.agreement_term:hover {
+    text-decoration-line: underline;
+}
+
+.logo_text {
+    color: #1C6DC1;
+}
+
+.upload-field {
+    height: 20vw;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+
+.file_text {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.upload_description {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.pay_description {
+    color: #000;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+.support_center {
+    background-color: #75D0FF;
+    min-height: 35vw;
+    padding-top: 5em;
+}
+
+.footer_hr {
+    border-color: #283343;
+}
+
+.support_title {
+    font-size: 2.25vw;
+}
+
+.rectangle_1 {
+    width: 353.853px;
+    height: 621.809px;
+    transform: rotate(-71.541deg);
+    fill: linear-gradient(180deg, rgba(58, 58, 244, 0.07) 0%, rgba(58, 58, 244, 0.00) 100%);
+}
+
+.search_input {
+    padding: 0px 10px 0px 35px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.search_btn {
+    background-color: #3A3AF4;
+    color: white;
+    padding: 5px 20px;
+}
+
+.search_icon {
+    top: 10px;
+    left: 10px;
+}
+
+.support_items {
+    background-color: #eef;
+    width: 100%;
+    min-height: 50vw;
+}
+
+.support_items > svg {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+}
+
+.support_item {
+    padding: 2vw;
+    background-color: #FFF;
+    box-shadow: 0px 30px 60px 0px rgba(58, 58, 244, 0.10);
+    z-index: 5;
+    height: fit-content;
+}
+
+.support_item_svg {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.bg_1 {
+    background-color: #E0FFB8;
+}
+
+.bg_2 {
+    background-color: #B8FFFB;
+}
+
+.bg_3 {
+    background-color: #FFB8CD;
+}
+
+.bg_4 {
+    background-color: #FFDAB8;
+}
+
+.bg_5 {
+    background-color: #B9FFB8;
+}
+
+.bg_6 {
+    background-color: #DBB8FF;
+}
+
+.support_item_title {
+    color: #060619;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.support_item_description {
+    font-size: 1vw;
+    margin-left: 10px
+}
+
+.main_heading {
+    padding: 8vw 6.5vw;
+    background-color: #F9F9F9;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.homepage {
+    padding-top: 5em;
+}
+
+.main_section {
+    padding: 0 7vw 7vw 7vw;
+}
+
+.main_heading_title {
+    font-size: 3.4vw;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.main_heading_img {
+    background-image: url(/src/assets/Frame-26.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vw;
+}
+
+.phone_image {
+    width: 20vw;
+    position: absolute;
+    bottom: -6vw;
+    left: 9vw;
+}
+
+.feature_title {
+    color: #1B2534;
+    font-size: 2vw;
+    line-height: 1.25;
+}
+
+.work_title_color {
+    color: #1B2534
+}
+
+.work_color {
+    color: #0083E1;
+}
+
+.work_item_content {
+    padding-top: 1.5vw;
+}
+
+.work_item_svg {
+    width: fit-content;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.bg-1 {
+    background: #FFC226;
+}
+
+.bg-2 {
+    background: #c3f6bf;
+}
+
+.bg-3 {
+    background: #C3F6BF;
+}
+
+.bg-4 {
+    background: #FEDBFF;
+}
+
+.work_item_title {
+    font-size: 3vw;
+    margin-top: 1.5vw;
+    font-weight: 700;
+}
+
+.work_item_description {
+    font-size: 1.5vw;
+    color: #606060;
+}
+
+.customer {
+    background-color: #F6F6F6;
+    padding: 2vw 3vw;
+    border-radius: 20px;
+}
+
+.customer_title {
+    font-size: 8vw;
+    color: #1B2534;
+    font-weight: 700;
+    margin-bottom: -6.3vw;
+}
+
+.customer_content {
+    columns: #606060;
+    font-size: 20px;
+}
+
+.user_photo {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+}
+
+.text_user2 {
+    color: #0ab262;
+}
+
+.download_section {
+    background: linear-gradient(136deg, #82FFF6 0%, #D2B7FF 32.29%, #FFE0AF 69.07%, #FFB9D1 100%);
+    margin-top: 10vw;
+    min-height: 25vw;
+    border-radius: 15px;
+}
+
+.download_title {
+    font-size: 3.2vw;
+    font-weight: bold;
+}
+
+.download_photo {
+    height: 35vw;
 }

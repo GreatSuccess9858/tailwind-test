@@ -29,10 +29,10 @@ const Navbar = ({logo}) => {
   useOutsideAlerter(wrapperRef, setOpenNav);
 
   return (
-    <div className="flex flex-row sticky top-0 items-center bg-scroll justify-between h-20 px-24">
-      <Link to="/" className=" flex items-center space-x-10 pl-7 logo">
-        <img height="60px" width="59px" className=" rounded-lg" src={logo} alt="logo" />
-        <span className=" font-sans font-bold text-black text-4xl">Due Diligenze</span>
+    <div className="flex flex-row absolute w-full top-0 items-center bg-scroll justify-between h-20 px-vw7">
+      <Link to="/" className=" flex items-center pl-7 logo">
+        <img height="64" width="59" className=" rounded-lg" src={logo} alt="logo" />
+        <span className=" font-sans font-bold text-black text-2.5vw ml-2vw">Due Diligenze</span>
       </Link>
 
           {/* Mobile Nav */}
@@ -43,13 +43,13 @@ const Navbar = ({logo}) => {
 
           {
              openNav &&
-              <div ref={wrapperRef} className="absolute top-0 w-full h-48 bg-white">
+              <div ref={wrapperRef} className="absolute top-0 w-full h-48 bg-white z-10">
                 <div onClick={()=>setOpenNav(false)} className="absolute right-12 top-9"><img height="30" width="30" src={close_icon} alt="" /></div>
                 <div className="flex flex-col items-center justify-around h-full pt-5">
-                  <a onClick={()=>setOpenNav(false)} href="#promotion" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Promotion</a>
-                  <a onClick={()=>setOpenNav(false)} href="#support" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Support</a>
-                  <a onClick={()=>setOpenNav(false)} href="#recruitment" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Recruitment</a>
-                  <a onClick={()=>setOpenNav(false)} href="#download" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Download</a>
+                  <Link onClick={()=>setOpenNav(false)} to="/promotion" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Promotion</Link>
+                  <Link onClick={()=>setOpenNav(false)} to="/support" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Support</Link>
+                  <Link onClick={()=>setOpenNav(false)} to="/recruitment" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Recruitment</Link>
+                  <Link onClick={()=>setOpenNav(false)} to="/download" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Download</Link>
                 </div>
               </div>
           }
@@ -58,10 +58,10 @@ const Navbar = ({logo}) => {
           {/* Desktop Nav */}
 
           <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
-              <Link to="/promotion" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Promotion</Link>
-              <Link to="/support" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Support</Link>
-              <Link to="/recruitment" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Recruitment</Link>
-              <Link to="/download" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Download</Link>
+              <Link to="/promotion" className="text-1.5vw font-semibold text-blue-800 transition-all hover:text-orange-500">Promotion</Link>
+              <Link to="/support" className="text-1.5vw font-semibold text-blue-800 transition-all hover:text-orange-500">Support</Link>
+              <Link to="/recruitment" className="text-1.5vw font-semibold text-blue-800 transition-all hover:text-orange-500">Recruitment</Link>
+              <Link to="/download" className="text-1.5vw font-semibold text-blue-800 transition-all hover:text-orange-500">Download</Link>
           </div>
 
     </div>
